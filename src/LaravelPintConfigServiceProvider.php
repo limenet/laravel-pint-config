@@ -2,9 +2,9 @@
 
 namespace Limenet\LaravelPintConfig;
 
+use Limenet\LaravelPintConfig\Commands\LaravelPintConfigCommand;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use Limenet\LaravelPintConfig\Commands\LaravelPintConfigCommand;
 
 class LaravelPintConfigServiceProvider extends PackageServiceProvider
 {

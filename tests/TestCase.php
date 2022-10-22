@@ -3,8 +3,8 @@
 namespace Limenet\LaravelPintConfig\Tests;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
-use Orchestra\Testbench\TestCase as Orchestra;
 use Limenet\LaravelPintConfig\LaravelPintConfigServiceProvider;
+use Orchestra\Testbench\TestCase as Orchestra;
 
 class TestCase extends Orchestra
 {
