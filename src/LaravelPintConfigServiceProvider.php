@@ -2,7 +2,6 @@
 
 namespace Limenet\LaravelPintConfig;
 
-use Limenet\LaravelPintConfig\Commands\LaravelPintConfigCommand;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
 
@@ -17,9 +16,6 @@ class LaravelPintConfigServiceProvider extends PackageServiceProvider
          */
         $package
             ->name('laravel-pint-config')
-            ->hasConfigFile()
-            ->hasViews()
-            ->hasMigration('create_laravel-pint-config_table')
-            ->hasCommand(LaravelPintConfigCommand::class);
+            ->hasConfigFile();
     }
 }
