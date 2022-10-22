@@ -1,12 +1,12 @@
 <?php
 
-namespace VendorName\Skeleton\Commands;
+namespace Limenet\LaravelPintConfig\Commands;
 
 use Illuminate\Console\Command;
 
-class SkeletonCommand extends Command
+class LaravelPintConfigCommand extends Command
 {
-    public $signature = 'skeleton';
+    public $signature = 'laravel-pint-config';
 
     public $description = 'My command';
 
