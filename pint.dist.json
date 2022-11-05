@@ -1,7 +1,50 @@
 {
     "preset": "laravel",
     "rules": {
+        "assign_null_coalescing_to_coalesce_equal": true,
+        "blank_line_between_import_groups": true,
+        "get_class_to_class_keyword": true,
+        "implode_call": true,
+        "modernize_strpos": true,
+        "new_with_braces": true,
         "not_operator_with_successor_space": false,
-        "use_arrow_functions": true
+        "ordered_class_elements": {
+            "order": [
+                "use_trait",
+                "case",
+                "constant_private",
+                "constant_protected",
+                "constant_public",
+                "constant",
+                "property_public_readonly",
+                "property_public_static",
+                "property_public",
+                "property_protected_readonly",
+                "property_protected_static",
+                "property_protected",
+                "property_private_readonly",
+                "property_private_static",
+                "property_private",
+                "construct",
+                "destruct",
+                "magic",
+                "method_public_abstract",
+                "method_public_abstract_static",
+                "method_public_static",
+                "method_public",
+                "method_protected_abstract",
+                "method_protected_abstract_static",
+                "method_protected_static",
+                "method_protected",
+                "method_private_abstract",
+                "method_private_abstract_static",
+                "method_private_static",
+                "method_private"
+            ]
+        },
+        "single_trait_insert_per_statement": true,
+        "ternary_to_null_coalescing": true,
+        "use_arrow_functions": true,
+        "void_return": true
     }
 }
