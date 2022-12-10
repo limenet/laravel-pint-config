@@ -18,10 +18,10 @@ class PublishConfig extends Command
             : [];
 
         $merged = $dist;
-        $merged['rules'] = [
-            ...$merged['rules'],
-            ...($local['rules'] ?? []),
-        ];
+        $merged['rules'] = array_merge(
+            $merged['rules'],
+            $local['rules'] ?? [],
+        );
 
         file_put_contents(base_path('pint.json'), json_encode($merged, JSON_PRETTY_PRINT));
 
