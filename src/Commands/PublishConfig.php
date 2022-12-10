@@ -25,6 +25,8 @@ class PublishConfig extends Command
 
         file_put_contents(base_path('pint.json'), json_encode($merged, JSON_PRETTY_PRINT));
 
+        $this->info('✔ Successfully published pint.json');
+
         return self::SUCCESS;
     }
 
