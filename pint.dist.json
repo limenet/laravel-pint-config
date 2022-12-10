@@ -49,7 +49,7 @@
                 "arguments",
                 "arrays",
                 "match",
-                "parameters",
+                "parameters"
             ]
         },
         "use_arrow_functions": true,
