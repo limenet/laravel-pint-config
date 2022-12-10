@@ -18,14 +18,6 @@ class LaravelPintConfigServiceProvider extends PackageServiceProvider
         $package
             ->name('laravel-pint-config')
             ->hasConfigFile()
-            ->hasMigration('create_laravel-pint-config_table')
             ->hasCommand(PublishConfig::class);
-    }
-
-    public function packageBooted()
-    {
-        $this->publishes([
-            __DIR__.'/../pint.dist.json' => base_path('pint.json'),
-        ], 'laravel-pint-config');
     }
 }

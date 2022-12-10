@@ -12,11 +12,7 @@ class PublishConfig extends Command
 
     public function handle(): int
     {
-        if (! file_exists($this->filename('pint.dist.json.orig'))) {
-            copy($this->filename('pint.dist.json'), $this->filename('pint.dist.json.orig'));
-        }
-
-        $dist = json_decode(file_get_contents($this->filename('pint.dist.json.orig')), true);
+        $dist = json_decode(file_get_contents($this->filename('pint.dist.json')), true);
         $local = file_exists(base_path('pint.local.json'))
             ? json_decode(file_get_contents(base_path('pint.local.json')), true)
             : [];
@@ -27,12 +23,7 @@ class PublishConfig extends Command
             ...($local['rules'] ?? []),
         ];
 
-        file_put_contents($this->filename('pint.dist.json'), json_encode($merged, JSON_PRETTY_PRINT));
-
-        $this->call('vendor:publish', [
-            '--tag' => 'laravel-pint-config',
-            '--force' => true,
-        ]);
+        file_put_contents(base_path('pint.json'), json_encode($merged, JSON_PRETTY_PRINT));
 
         return self::SUCCESS;
     }
