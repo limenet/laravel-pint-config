@@ -8,6 +8,9 @@
         "get_class_to_class_keyword": true,
         "implode_call": true,
         "method_chaining_indentation": true,
+        "method_argument_space": {
+            "on_multiline": "ensure_fully_multiline"
+        },
         "modernize_strpos": true,
         "new_with_braces": true,
         "no_superfluous_phpdoc_tags": true,
