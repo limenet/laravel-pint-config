@@ -16,7 +16,7 @@
         "no_superfluous_phpdoc_tags": true,
         "not_operator_with_successor_space": false,
         "nullable_type_declaration_for_default_null_value": {
-            "use_nullable_type_declaration": false
+            "use_nullable_type_declaration": true
         },
         "ordered_class_elements": {
             "order": [
