@@ -2,6 +2,4 @@
 
 namespace Limenet\LaravelPintConfig;
 
-class LaravelPintConfig
-{
-}
+class LaravelPintConfig {}
