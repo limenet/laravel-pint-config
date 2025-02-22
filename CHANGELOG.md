@@ -2,6 +2,10 @@
 
 All notable changes to `laravel-pint-config` will be documented in this file.
 
+## v1.3.1 - 2025-02-22
+
+- Laravel 12
+
 ## v1.3.0 - 2024-02-04
 
 - Support Laravel 11 #13
