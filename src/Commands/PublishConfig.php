@@ -22,6 +22,9 @@ class PublishConfig extends Command
             $merged['rules'],
             $local['rules'] ?? [],
         );
+        $merged['exclude'] = $local['exclude'] ?? [];
+        $merged['notName'] = $local['notName'] ?? [];
+        $merged['notPath'] = $local['notPath'] ?? [];
 
         file_put_contents(base_path('pint.json'), json_encode($merged, JSON_PRETTY_PRINT));
 
