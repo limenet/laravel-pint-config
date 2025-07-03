@@ -22,13 +22,13 @@
         "spatie/laravel-package-tools": "^1.12.0"
     },
     "require-dev": {
-        "larastan/larastan": "^3.1",
-        "nunomaduro/collision": "^8.6.1",
-        "orchestra/testbench": "^10.1",
+        "larastan/larastan": "^3.5",
+        "nunomaduro/collision": "^8.8.2",
+        "orchestra/testbench": "^10.4",
         "phpstan/extension-installer": "^1.4.3",
-        "phpstan/phpstan-deprecation-rules": "^2.0.1",
-        "phpstan/phpstan-phpunit": "^2.0.4",
-        "rector/rector": "^2.0.10"
+        "phpstan/phpstan-deprecation-rules": "^2.0.3",
+        "phpstan/phpstan-phpunit": "^2.0.6",
+        "rector/rector": "^2.1.0"
     },
     "autoload": {
         "psr-4": {
