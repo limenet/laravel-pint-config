@@ -9,6 +9,7 @@
         "implode_call": true,
         "method_chaining_indentation": true,
         "method_argument_space": {
+            "attribute_placement": "standalone",
             "on_multiline": "ensure_fully_multiline"
         },
         "modernize_strpos": true,
@@ -22,13 +23,15 @@
             "order": [
                 "use_trait",
                 "case",
-                "constant_private",
-                "constant_protected",
-                "constant_public",
                 "constant",
+                "constant_public",
+                "constant_protected",
+                "constant_private",
+                "property_public_abstract",
                 "property_public_readonly",
                 "property_public_static",
                 "property_public",
+                "property_protected_abstract",
                 "property_protected_readonly",
                 "property_protected_static",
                 "property_protected",
@@ -38,6 +41,7 @@
                 "construct",
                 "destruct",
                 "magic",
+                "phpunit",
                 "method_public_abstract",
                 "method_public_abstract_static",
                 "method_public_static",
@@ -60,6 +64,8 @@
         "ternary_to_null_coalescing": true,
         "trailing_comma_in_multiline": {
             "elements": [
+                "arguments",
+                "array_destructuring",
                 "arrays",
                 "match",
                 "parameters"
